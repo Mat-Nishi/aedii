@@ -1,0 +1,52 @@
+import stackCtg as ctg
+import stackLL as ll
+
+def main():
+    print("Testing contiguous:")
+    stack = ctg.Stack(10, 1,2,3,4)
+    print(f"Creating a stack -> {stack}")
+    print("Adding numbers 6 then 5 to the stack:")
+    stack.add(6)
+    stack.add(5)
+    print(stack)
+    print("Removing three elements from the stack:")
+    stack.pop()
+    stack.remove(2)
+    print(stack)
+    print(f"Length of the stack is -> {len(stack)}")
+    stack.add(8, 17, 36)
+    print("Adding 8 then 17 then 36:")
+    print(stack)
+    print(f"Top element is -> {stack.top()}")
+    print("Removing all elements:")
+    stack.clear()
+    print(stack)
+    print(f"Top element is -> {stack.top()}")
+
+    print()
+    print()
+
+    print("Testing linked:")
+    stack = ll.Stack(1,2,3,4)
+    print(f"Creating a stack -> {stack}")
+    print("Adding numbers 6 then 5 to the stack:")
+    stack.add(6)
+    stack.add(5)
+    print(stack)
+    print("Removing three elements from the stack:")
+    stack.pop()
+    stack.remove(2)
+    print(stack)
+    print(f"Length of the stack is -> {len(stack)}")
+    stack.add(8, 17, 36)
+    print("Adding 8 then 17 then 36:")
+    print(stack)
+    print(f"Top element is -> {stack.top()}")
+    print("Removing all elements:")
+    stack.clear()
+    print(stack)
+    print(f"Top element is -> {stack.top()}")
+
+
+if __name__ == "__main__":
+    main()
